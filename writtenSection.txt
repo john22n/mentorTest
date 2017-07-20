@@ -2,27 +2,53 @@ Answer each question in a written format
 
 1. What does semantic HTML mean?
 
+    It is HTML that uses readable element or tag names. Instead of div to split up a page, we can use nav or section or article to divide an HTML page.
+
 2. What is the box model?
+
+    The box model is a representation of a single element that depicts the border margin and padding of a single tag such as a p or h1 tag.
 
 3. What is the difference between IDs and Classes?
 
+    ID is used for individual elements inside a div and uses # to be reached in CSS. Classes are generally used
+    for divs or sections of HTML pages and can be accessed in a CSS file with a ".".
+
 4. What does the z-index do?
+
+    The Z-index can specify which element is on top if they overlap and only works on positioned elements.
 
 5. Summarize what the keyword 'this' is used for?
 
+    The keyword specifies the context.
+
 6. What is a callback?
+
+    A callback is a function that is passed to another function and is called inside it.
 
 7. What is a closure?
 
+    A closure is an inner function that has access to an outer function.
+
 8. How does prototype work?
 
+    Each object in Javascript has a prototype property and the property points to another object where it inherits other properties and methods.
+
 9. What is MVC?
+    MVC is an acronym for Model View Controller. It is an architectural style used in angular js and other front end frameworks.
+    The Model holds the data, the view displays it in the UI, and the controller manipulates it.
 
 10. What is the component lifecycle?
 
+    Components are separated blocks of code that handle specific jobs in an application. They are methods to construct views in React and other libraries.
+
 11. What is REST?
 
+     REST is a communication protocol between clients and server.
+
 12. Name three ways of getting data from the URL using express
+
+    In Express, data can be passed through a URL using parameters, queries or the body; req.params, req.query, req.body.
+
 
 create table users (
 id serial,
@@ -34,8 +60,26 @@ email varchar(255)
 
 -Get all users:
 
+    SELECT * FROM users;
+
+
 -Create a new user with the name of 'your name' and an email of 'fake@fake.com':
+
+
+    INSERT INTO users
+    (name, email)
+    VALUES
+    ('John Noriega', 'fake@fake.com');
+
+
 
 -Update the newly created user's name to 'Bobby Boy':
 
+    SET name = 'Bobby Boy'
+    WHERE email = 'fake@fake.com';
+
 -Delete the newly updated user:
+
+
+    DELETE * FROM users
+    WHERE email = 'fake@fake.com';
